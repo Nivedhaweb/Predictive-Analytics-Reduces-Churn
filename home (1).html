@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Churn</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* powderblue */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        form {
+            margin: 0 auto;
+            max-width: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff6347; /* tomato */
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #ff473a; /* dark tomato */
+        }
+
+        .output {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>CUSTOMER CHURN PREDICTION</h2>
+
+<form action="/" method="POST">
+    <fieldset>
+        <div class="form">
+            <label for="Dependents">Dependents:</label><br>
+            <input type="text" name="Dependents" id="Dependents" value=""><br>
+
+            <label for="tenure">tenure:</label><br>
+            <input type="number" name="tenure" id="tenure" value=""><br>
+
+            <label for="OnlineSecurity">Online Security:</label><br>
+            <input type="text" name="OnlineSecurity" id="OnlineSecurity" value=""><br>
+
+            <label for="OnlineBackup">Online Backup:</label><br>
+            <input type="text" name="OnlineBackup" id="OnlineBackup" value=""><br>
+
+            <label for="DeviceProtection">Device Protection:</label><br>
+            <input type="text" name="DeviceProtection" id="DeviceProtection" value=""><br>
+
+            <label for="TechSupport">Tech Support:</label><br>
+            <input type="text" name="TechSupport" id="TechSupport" value=""><br>
+
+            <label for="Contract">Contract:</label><br>
+            <input type="text" name="Contract" id="Contract" value=""><br>
+
+            <label for="PaperlessBilling">Paperless Billing:</label><br>
+            <input type="text" name="PaperlessBilling" id="PaperlessBilling" value=""><br>
+
+            <label for="MonthlyCharges">Monthly Charges:</label><br>
+            <input type="text" name="MonthlyCharges" id="MonthlyCharges" value=""><br>
+
+            <label for="TotalCharges">Total Charges:</label><br>
+            <input type="text" name="TotalCharges" id="TotalCharges" value=""><br>
+        </div>
+
+        <button type="submit" name="submit">SUBMIT</button>
+    </fieldset>
+</form>
+
+<div class="output">
+    <strong>{{op1}}</strong><br>
+    <strong>{{op2}}</strong>
+</div>
+
+</body>
+</html>
